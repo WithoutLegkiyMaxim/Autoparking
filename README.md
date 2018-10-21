@@ -1,24 +1,5 @@
-# README
+# Autoparking
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Readme comming soon here :)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Now you can look at our project docs -> [Link](https://docs.google.com/document/d/1Y7SWlhunThO1LW4LisWeDIUvpCKcne2dgePW_D79j0o/edit?usp=sharing)
