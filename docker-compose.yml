@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6
+    ports:
+      - "5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  autoparking:
+    build:
+      context: .
+      dockerfile: Main.dockerfile
+    command: ./entrypoint.sh
+    volumes:
+      - ./:/Autoparking
+    ports:
+      - "3000:3000"
+      - "3035:3035"
+    links:
+      - postgres

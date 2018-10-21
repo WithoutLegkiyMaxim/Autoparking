@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  host: postgres
+  port: 5432
+
+
+development:
+  <<: *default
+  database: Autoparking_development
+
+test:
+  <<: *default
+  database: Autoparking_test
+
+# production:
+#   <<: *default
+#   database: Autoparking_production
+#   username: Autoparking
+#   password: <%= ENV['AUTOPARKING_DATABASE_PASSWORD'] %>
