@@ -9,4 +9,7 @@ fi
 if ! test -d "./pgdata/pg_replslot"; then
   mkdir ./pgdata/pg_replslot/
 fi
+if ! test -d "./pgdata/pg_twophase"; then
+  mkdir ./pgdata/pg_twophase/
+fi
 docker-compose up --build
