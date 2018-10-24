@@ -12,4 +12,9 @@ fi
 if ! test -d "./pgdata/pg_twophase"; then
   mkdir ./pgdata/pg_twophase/
 fi
+if ! test -d "./pgdata/pg_stat_tmp/"; then
+  mkdir ./pgdata/pg_stat_tmp/
+  touch ./pgdata/pg_stat_tmp/global.tmp
+fi
+sudo chown postgres.postgres ./pg_data/ -R
 docker-compose up --build
