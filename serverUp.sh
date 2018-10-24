@@ -25,6 +25,5 @@ fi
 if ! test -d "./pgdata/pg_logical/mappings/"; then
   mkdir -p ./pgdata/pg_logical/mappings/
 fi
-
 sudo chown postgres.postgres pg_data/ -R
 docker-compose up --build
